@@ -1,0 +1,21 @@
+.leftNav {
+
+    position: fixed;
+
+}
+
+@media screen and (max-width:576px) {
+
+    .leftNav {
+
+        position: static;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:991px) {
+
+    .leftNav {
+
+        position: static;
+    }
+}
