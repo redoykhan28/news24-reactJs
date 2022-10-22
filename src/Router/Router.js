@@ -16,22 +16,22 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/all_news')
+                loader: () => fetch('https://news24-server.vercel.app/all_news')
             },
             {
                 path: '/home',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/all_news')
+                loader: () => fetch('https://news24-server.vercel.app/all_news')
             },
             {
                 path: '/news/:id',
                 element: <PrivateRoute><News></News></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/newsDetails/${params.id}`)
+                loader: ({ params }) => fetch(`https://news24-server.vercel.app/newsDetails/${params.id}`)
             },
             {
                 path: '/catagory/:id',
                 element: <Catagory></Catagory>,
-                loader: ({ params }) => fetch(`http://localhost:5000/catagory_news/${params.id}`)
+                loader: ({ params }) => fetch(`https://news24-server.vercel.app/catagory_news/${params.id}`)
             },
             {
                 path: '/login',
